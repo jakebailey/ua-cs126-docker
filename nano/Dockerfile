@@ -1,4 +1,5 @@
 FROM jakebailey/alpine-sane
 
 RUN apk --no-cache add \
-        nano
+        nano \
+    && adduser -D -s /bin/bash student

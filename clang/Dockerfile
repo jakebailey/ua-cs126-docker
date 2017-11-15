@@ -2,4 +2,5 @@ FROM jakebailey/alpine-sane
 
 RUN apk --no-cache add \
         build-base \
-        clang
+        clang \
+    && adduser -D -s /bin/bash student
