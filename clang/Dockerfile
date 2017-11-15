@@ -4,3 +4,6 @@ RUN apk --no-cache add \
         build-base \
         clang \
     && adduser -D -s /bin/bash student
+
+USER student
+WORKDIR /home/student
